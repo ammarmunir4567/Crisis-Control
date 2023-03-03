@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        android:showAsAction="always|collapseActionView"
+        android:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/action_sort"
+        android:title="Sort"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_sort"
+        >
+        <menu
+            >
+            <item
+                android:title="Ratings (Desc)"
+                android:id="@+id/Sort_Ratings"
+                android:visible="false"
+                />
+            <item
+                android:title="Blocked Accounts"
+                android:id="@+id/Sort_Blocked"
+                android:visible="false"
+                />
+            <item
+                android:title="Active Accounts"
+                android:id="@+id/Sort_Active"
+                android:visible="false"
+                />
+            <item
+                android:title="Ratings (Asc)"
+                android:id="@+id/Sort_Ratings_asc"
+                android:visible="false"
+                />
+            <item
+                android:title="Amount (Desc)"
+                android:id="@+id/Sort_Amount"
+                android:visible="false"
+                />
+            <item
+                android:title="Amount (Asc)"
+                android:id="@+id/Sort_Amount_asc"
+                android:visible="false"
+                />
+            <item
+                android:title="Volunteers Needed (Desc)"
+                android:id="@+id/Sort_Volunteers"
+                android:visible="false"
+                />
+            <item
+                android:title="Volunteers Needed (Asc)"
+                android:id="@+id/Sort_Volunteers_asc"
+                android:visible="false"
+                />
+
+        </menu>
+    </item>
+</menu>

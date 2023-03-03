@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.VolunteerPostActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/VolunteerPostNgoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NGO NAME"
+
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+
+        android:textStyle="bold"
+        android:layout_below="@+id/VolunteerPostNgoName"
+        android:id="@+id/VolunteerPostTitle"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_below="@id/VolunteerPostTitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/VolunteerPostDescription"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="applied out of"
+        android:layout_alignBaseline="@id/VolunteerPostAmount"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volunteered"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/VolunteerPostAmount"
+        android:id="@+id/volunteeredAmount"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:layout_alignParentEnd="true"
+
+        android:textAlignment="center"
+        android:id="@+id/VolunteerPostAmount"
+        android:layout_below="@id/VolunteerPostDescription"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VolunteerPostAmount"
+        android:id="@+id/VolunteerPostProgressBar"
+        android:hapticFeedbackEnabled="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+  <EditText
+      android:inputType="number"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="CNIC"
+      android:id="@+id/volunteerPostCNIC"
+      android:layout_marginTop="20dp"
+      android:layout_below="@+id/VolunteerPostProgressBar"
+      />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number(03xxxxxxxxx)"
+        android:id="@+id/volunteerPostPhoneNumber"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/volunteerPostCNIC"
+        />
+    <Button
+        android:id="@+id/volunteerPostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volunteerPostPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Volunteer"
+        />
+    <Button
+        android:id="@+id/viewVolunteerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volunteerPostPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="View Volunteer List"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/NGOAccountOptionLayoutVol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutViewProject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/linearLayoutViewProject2">
+
+            <Button
+                android:id="@+id/btnRequestVolunteersVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Request Volunteers"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnRequestDonationsVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Donations"
+                android:layout_marginLeft="5dp"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutViewProject2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <Button
+                android:id="@+id/btnUpdateProjectVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Post" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

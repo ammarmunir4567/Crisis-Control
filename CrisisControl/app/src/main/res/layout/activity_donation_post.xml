@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DonationPostActivity"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/donationPostNgoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NGO NAME"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_below="@+id/donationPostNgoName"
+        android:id="@+id/donationPostTitle"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_below="@id/donationPostTitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/donationPostDescription"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textAlignment="center"
+        android:id="@+id/donatePostAmount"
+        android:layout_below="@id/donationPostDescription"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" donated out of "
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/donatePostAmount"
+
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/donatedPostAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="donated"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/donatePostAmount"
+        />
+<ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/donatePostAmount"
+    android:id="@+id/donationPostProgressBar"
+    android:hapticFeedbackEnabled="true"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    />
+    <SeekBar
+        android:id="@+id/donationPostSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donationPostProgressBar"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donationPostSeekBar"
+        android:layout_centerHorizontal="true"
+        android:hint="Amount"
+        android:id="@+id/donationPostEditText"
+
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+
+        />
+    <Button
+        android:id="@+id/donationPostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donationPostEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Donate"
+        />
+
+    <RelativeLayout
+        android:id="@+id/NGOAccountOptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutViewProject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/linearLayoutViewProject2">
+
+            <Button
+                android:id="@+id/btnRequestVolunteers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="11sp"
+                android:text="Request Volunteers" />
+
+            <Button
+                android:id="@+id/btnRequestDonations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Donations"
+                android:textSize="11sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutViewProject2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/btnUpdateProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Post" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

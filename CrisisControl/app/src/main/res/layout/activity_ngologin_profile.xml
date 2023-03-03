@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activities.NGOAccountMainActivity">
+
+    <ImageButton
+        android:id="@+id/NGOLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00000000"
+        android:src="@drawable/ic_logout"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NGOLogout" />
+
+    <TextView
+        android:id="@+id/txtNGOMainName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NGO NAME"
+
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/v_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/addDonationAllocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Donation Allocations"
+        app:layout_constraintBottom_toTopOf="@+id/rate_p"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_profile" />
+
+    <Button
+        android:id="@+id/rate_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Projects"
+        app:layout_constraintBottom_toTopOf="@+id/btnAllMedicalHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addDonationAllocation" />
+
+    <Button
+        android:id="@+id/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camp Locations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcceptedMedicalHelp" />
+
+    <Button
+
+        android:id="@+id/v_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="184dp"
+        android:text="View Profile"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAcceptedMedicalHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accepted Medical Requests"
+        app:layout_constraintBottom_toTopOf="@+id/loc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllMedicalHelp" />
+
+    <Button
+        android:id="@+id/btnAllMedicalHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical Requests"
+        app:layout_constraintBottom_toTopOf="@+id/btnAcceptedMedicalHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rate_p" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NGOProfileActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NGONAME"
+
+        android:textStyle="bold"
+        android:id="@+id/NGOProfileName"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NGOProfileName"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/NGOProfileRating"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NGOProfileDescription"
+        android:text="Description"
+        android:layout_below="@id/NGOProfileRating"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NGOProfileDescription"
+            android:id="@+id/NgoProfileDonationHistoryButton"
+            android:text="View Donation History"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View NGO's Projects"
+        android:id="@+id/NGOProfileProjectListButton"
+        android:layout_below="@id/NgoProfileDonationHistoryButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relief Camp Locations"
+        android:id="@+id/NGOProfileCampLocationButton"
+        android:layout_below="@id/NGOProfileProjectListButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/txtRateUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/NGOProfileUserRatingBar"
+        android:text="Rate Us!"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NGOProfileUserRatingBar"
+        android:layout_above="@+id/NGOProfileFooter"
+        android:layout_centerHorizontal="true"
+        android:tooltipText="Rate Profile"
+        />
+
+    <TextView
+        android:id="@+id/txtStaticReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgReportButton"
+        android:layout_alignBaseline="@+id/txtRateUs"
+        android:layout_alignEnd="@+id/imgReportButton"
+        android:layout_marginRight="10dp"
+        android:text="Report" />
+
+    <ImageButton
+        android:id="@+id/imgReportButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/NGOProfileUserRatingBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/NGOProfileUserRatingBar"
+        android:src="@drawable/ic_report"
+        android:backgroundTint="#00000000"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/NGOProfileFooter"
+        >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#757474"
+
+        android:id="@+id/footerguide"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textAlignment="center"
+            android:layout_below="@+id/footerguide"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/NGOProfileAddress"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1046707048037",
+    "project_id": "sdacrisiscontrolproject",
+    "storage_bucket": "sdacrisiscontrolproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046707048037:android:eb64df9c832814b512c08c",
+        "android_client_info": {
+          "package_name": "com.example.testing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046707048037-v1a1senm4j1pviue01okb4s5kq5ikdsl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQJatdundhBZxy4I4-ip6D9NjBm6LvtYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046707048037-v1a1senm4j1pviue01okb4s5kq5ikdsl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
